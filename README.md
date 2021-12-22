@@ -1,6 +1,6 @@
 # reagent-tailwind
 
-A starting point with reframe and tailwind (plus purgecss to remove unused CSS).
+A starting point with reagent and tailwind (plus purgecss to remove unused CSS).
 
 ## Startup
 
