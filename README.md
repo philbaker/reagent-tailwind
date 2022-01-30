@@ -5,9 +5,10 @@ A starting point with Reagent and Tailwind.
 ## Startup
 
 - Build/REPL: `npx shadow-cljs watch frontend`
-- CSS: `npx tailwindcss -i ./src/css/app.css -o ./public/app.css --watch`
+- CSS dev: `npx tailwindcss -i ./src/css/app.css -o ./public/app.css --watch`
+- CSS prod: `npx tailwindcss -o ./public/app.css --minify`
 
-## Neovim intellisense support via coc.nvim
+## Tailwind class autocomplete via coc.nvim
 
 ```
     "tailwindCSS.includeLanguages": {
