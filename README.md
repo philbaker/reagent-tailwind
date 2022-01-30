@@ -1,13 +1,13 @@
 # reagent-tailwind
 
-A starting point with reagent and tailwind (plus purgecss to remove unused CSS).
+A starting point with Reagent and Tailwind.
 
 ## Startup
 
 - Build/REPL: `npx shadow-cljs watch frontend`
-- CSS: `npm run watch` or `npm run build` or `npm run build-prod`
+- CSS: `npx tailwindcss -i ./src/css/app.css -o ./public/app.css --watch`
 
-## Taliwind intellisense support
+## Neovim intellisense support via coc.nvim
 
 ```
     "tailwindCSS.includeLanguages": {
