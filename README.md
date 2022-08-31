@@ -8,23 +8,19 @@ A starting point with Reagent and Tailwind.
 - CSS dev: `npx tailwindcss -i ./src/css/app.css -o ./public/app.css --watch`
 - CSS prod: `npx tailwindcss -o ./public/app.css --minify`
 
-## Tailwind class autocomplete via coc.nvim
+## Tailwind intellisense support
 
 ```
-    "tailwindCSS.includeLanguages": {
-        "clojure": "html"
-    },
-    "[clojure]": {
-        "editor.snippetSuggestions": "bottom",
-        "tailwindCSS.experimental.classRegex": [
-            [
-                ":\\w+([^\\s]*)",
-                "\\.([^\\.]*)"
-            ],
-        ]
-    },
+ "tailwindCSS.experimental.classRegex": [                                                       
+    ":class\\s+\"([^\"]*)\"",                                                                    
+    ":[\\w-.#>]+\\.([\\w-]*)"                                                                    
+  ],                                                                                             
+  "tailwindCSS.includeLanguages": {                                                              
+    "clojure": "html"                                                                            
+  }   
 ```
 
 ### References
 - https://github.com/jacekschae/shadow-reagent
 - https://flaviocopes.com/tailwind-setup/
+- https://github.com/tailwindlabs/tailwindcss-intellisense/issues/400#issuecomment-1218494303
