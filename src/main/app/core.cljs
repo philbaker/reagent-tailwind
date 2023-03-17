@@ -6,7 +6,7 @@
 (defn ^:dev/after-load start
   []
   (rdom/render [views/app]
-                      (.getElementById js/document "app")))
+               (.getElementById js/document "app")))
 
 (defn ^:export main
   []
