@@ -1,7 +1,7 @@
-(ns frontend.core
+(ns app.core
   (:require [reagent.core :as r]
             [reagent.dom :as rdom]
-            [frontend.views :as views]))
+            [app.views :as views]))
 
 (defn ^:dev/after-load start
   []

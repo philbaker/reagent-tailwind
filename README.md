@@ -2,11 +2,13 @@
 
 A starting point with Reagent and Tailwind.
 
-## Startup
+## Watch (dev)
+- Shadow: `npm run shadow:watch`
+- Tailwind: `npm run tailwind:watch`
 
-- Build/REPL: `npx shadow-cljs watch frontend`
-- CSS dev: `npx tailwindcss -i ./src/css/app.css -o ./public/app.css --watch`
-- CSS prod: `npx tailwindcss -o ./public/app.css --minify`
+## Release (prod)
+- Shadow: `npm run shadow:release`
+- Tailwind: `npm run tailwind:release`
 
 ## Tailwind intellisense support
 

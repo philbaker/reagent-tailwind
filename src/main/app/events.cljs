@@ -1,5 +1,5 @@
-(ns frontend.events
-  (:require [frontend.state :refer [app-state]]))
+(ns app.events
+  (:require [app.state :refer [app-state]]))
 
 (defn increment
   [event]

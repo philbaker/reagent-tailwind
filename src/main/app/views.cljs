@@ -1,6 +1,6 @@
-(ns frontend.views
-  (:require [frontend.state :refer [app-state]]
-            [frontend.events :refer [increment decrement]]))
+(ns app.views
+  (:require [app.state :refer [app-state]]
+            [app.events :refer [increment decrement]]))
 
 (defn header
   []

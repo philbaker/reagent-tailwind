@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "shadow:watch": "shadow-cljs watch app",
+    "shadow:release": "shadow-cljs release app",
+    "tailwind:build": "tailwindcss -i ./src/css/app.css -o ./public/app.css",
+    "tailwind:watch": "tailwindcss -i ./src/css/app.css -o ./public/app.css --watch",
+    "tailwind:release": "tailwindcss -o ./public/app.css --minify"
+  },
   "devDependencies": {
     "shadow-cljs": "2.16.5",
     "tailwindcss": "^3.0.17"
